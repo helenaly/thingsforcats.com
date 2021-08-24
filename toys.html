@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Toys for Cats</title>
+</head>
+<body>
+    <header>
+        <h1>Things for cats</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="food.html"><i class="fa fa-paw"></i> Food</a>
+        <a href="toys.html" class="active"><i class="fa fa-magic"></i> Toys</a>
+        <a href="beds.html"><i class="fa fa-bed"></i> Beds</a>
+        <a href="shopcart.html"><i class="fa fa-shopping-cart"></i> <span>0</span> - Shopping Cart</a>
+        <a href="myaccount.html"><i class="fa fa-user"></i> My Account</a>
+    </nav>
+    
+    <div class="main">
+        <div class="card topcard">
+            <h2>Don't miss out on these deals:</h2>
+            <div class="imgrow">
+                <div class="imgcard">
+                    <img src="img/toy01.png" alt="cat with toy"><br>
+                    Colorful Hunting Wand<br>
+                    <b><span class="oldprice">$22</span><br>
+                    <span class="dealprice">now $19</span></b><br>
+                    <button class="button" onclick="addToCart('Colorful Hunting Wand', 19)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/toy13.png" alt="cat with toy"><br>
+                    Pack of Yarn Balls<br>
+                    <b><span class="oldprice">$15</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Pack of Yarn Balls', 9)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/toy10.png" alt="cat with toy"><br>
+                    Mixed Circular Bells<br>
+                    <b><span class="oldprice">$19</span><br>
+                    <span class="dealprice">now $12</span></b><br>
+                    <button class="button" onclick="addToCart('Mixed Circular Bells', 12)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/toy12.png" alt="cat with toy"><br>
+                    Chew Cylinder<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $8</span></b><br>
+                    <button class="button"  onclick="addToCart('Chew Cylinder', 8)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/toy11.png" alt="cat with toy"><br>
+                    Deluxe Hunt Stick<br>
+                    <b><span class="oldprice">$39</span><br>
+                    <span class="dealprice">now $24</span></b><br>
+                    <button class="button" onclick="addToCart('Deluxe Hunt Stick', 24)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="leftcolumn"><div id="allproducts"></div>
+                <div class="card smallcard">
+                    <h2>Catnip Fish</h2>
+                    <a href="catnipfish.html"><img src="img/toy02.jpg" alt="a cat with a toy fish"></a>
+                    <p>A toy fish with catnip inside.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper.<br>Nulla varius odio sit amet risus ultricies vulputate...</p>
+                    <h4>$7</h4>
+                    <button class="button" onclick="addToCart('Catnip Fish', 7)">Add to cart</button>
+                </div>
+                <div class="card smallcard">
+                    <h2>Little Mouse</h2>
+                    <img src="img/toy03.png" alt="a cat with a toy mouse">
+                    <p>A white toy mouse.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper.<br>Nulla varius odio sit amet risus ultricies vulputate...</p>
+                    <h4>$5</h4>
+                    <button class="button" onclick="addToCart('Little Mouse', 5)">Add to cart</button>
+                </div>
+            </div>
+            <!-- items for the right column -->
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Yarn Ball</h2>
+                    <img src="img/toy04.jpg" alt="cat with yarn ball">
+                    <p>A nice yarn ball for your cat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper...</p>
+                    <h4>$4</h4>
+                    <button class="button" onclick="addToCart('Yarn Ball', 4)">Add to cart</button>
+                </div>
+                <div class="card">
+                    <h2>Claws Out Scratching Post</h2>
+                    <img src="img/toy05.png" alt="cat with scratch post">
+                    <p>Handmade scratching post with extra toys.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper...</p>
+                    <h4>$49</h4>
+                    <button class="button" onclick="addToCart('Claws Out Scratching Post', 49)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="linkrow">
+            <div class="linkcolumn">
+                <a href="contact.html">About Us</a>
+                <a href="#">Find a shop near you</a>
+                <a href="#">Our affiliates</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">F A Q</a>
+                <a href="#">Customer Services</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">Become a partner</a>
+                <a href="#">Job openings</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="socialmenu">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="contact.html"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fa fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2021 Things for Cats</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

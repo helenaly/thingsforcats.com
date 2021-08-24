@@ -1,0 +1,355 @@
+/* selects everything */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #bbb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* global header */
+header{
+    background: slateblue;
+    background-image: url("img/cat01.jpg");
+    background-size: cover;    
+    background-blend-mode: overlay;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* the h1 inside of header */
+header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/* global navbar */
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+/* the links on the navbar */
+nav a{
+    text-decoration: none;
+    text-align: center;
+    background: rgb(49, 49, 49);
+    color: white;
+    padding: .6em 0;
+    flex: auto;
+}
+
+/* the link that is hovered but not the active one */
+nav a:hover:not(.active){
+    background: slateblue;
+}
+
+/* the active link on navbar is marked w special color */
+.active{
+    background: #5c4bca;
+}
+
+/* the main frame with margins on the side */
+.main{
+    flex: 100%;
+    text-align: center;
+    margin: 0 10%;
+}
+/* when having two columns, row makes them appear vertically */
+.row{
+    display: flex;
+}
+
+/* left column takes up 75% of the main frame */
+.leftcolumn{
+    flex: 75%;
+}
+
+/* right column takes up 25% of the main frame */
+.rightcolumn{
+    flex: 25%;
+}
+
+/* the cards of the right column have special margin so it's
+not too wide in the middle */
+.rightcolumn .card{
+    margin-left: 0;
+}
+
+/* the cards with products and content */
+.card{
+    background: white;
+    padding: 1em;
+    margin: 1em;
+}
+
+.card h2{
+    color: slateblue;
+}
+
+.card h4{
+    margin: .5em;
+}
+
+.card img{
+    width: 80%;
+}
+
+/* the image on smaller cards is 50% wide */
+.smallcard img{
+    width: 50%;
+}
+
+/* top seller deal text is uppercase */
+.dealtext{
+    text-transform: uppercase;
+}
+
+.oldprice{
+    text-decoration: line-through;
+}
+.dealprice{
+    color: red;
+}
+
+.lefttext{
+    text-align: left;
+}
+
+/* toplist on index-page */
+ol{
+    text-align: left;
+}
+
+.productpage{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: white;
+    margin: 1em;
+    text-align: left;
+}
+
+.productpage img{
+    width: 40%;
+    height: 40%;
+    margin: 2.5em 0 2.5em 1em;
+}
+
+.prodtext{
+    margin: 1em;
+}
+
+.extrapad{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+/* top card for deals or shopping cart title info */
+.topcard{
+    margin: 1em 1em 0 1em;
+    /* margin: 20px 20px 0px 20px; */
+}
+/* image on the thanks-page */
+.topcard img{
+    width: 400px;
+}
+
+.imgrow{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgcard{
+    background: #e5e5ee;
+    margin: .5em;
+    flex: 10%;
+}
+
+/* image inside of imgcard */
+.imgcard img{
+    width: 220px;
+    margin: 1em;
+}
+
+/* placeholder for images */
+.fakeimg{
+    background: #bbb;
+    height: 200px;
+    padding: 20px;
+}
+
+/* buttons for buying things */
+.button{
+    background: slateblue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 12px 30px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #5c4bca;
+}
+/* account-page has special styling for the form */
+.login form{
+    width: 50%;
+    margin: auto;
+}
+
+/* global footer */
+footer{
+    background: slateblue;
+    color: white;
+}
+
+/* links in the footer */
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/* when hovering links in the footer */
+footer a:hover{
+    color: rgb(212, 162, 212);
+}
+.linkrow{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 30px;
+}
+/* the links column in the footer */
+.linkcolumn{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+.socialmenu{
+    display: flex;
+    justify-content: center;
+}
+.socialmenu a{
+    margin: 10px;
+    font-size: 30px;
+}
+.footer-bottom{
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+/* shopping cart page - styling the table of shop items */
+.shopcart{
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border-collapse: collapse;
+}
+.shopcart th, .shopcart td{
+    padding: 10px;
+    border-bottom: 1px solid rgb(195, 192, 212);
+}
+.shopcart tr:hover{
+    background: rgba(167, 158, 202, 0.301);
+}
+#shopcart {
+    width: 50%;
+    margin: auto;
+}
+#shopcart p {
+    background-color: rgb(231, 228, 246);
+    padding: .5em;
+}
+#totalprice, #itemsnumber{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 1em;
+}
+a span {
+    color: rgb(159, 144, 255);
+    font-weight: bold;
+}
+
+/* checkout page */
+.shipping{
+    display: flex;
+    flex-flow: row;
+}
+
+.customerform{
+    text-align: left;
+}
+
+input, label, select, textarea{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+
+input[type=checkbox]{
+    width: 20px;
+}
+
+/* thanks-page */
+.thanks{
+    background: white;
+    margin: 10px 10px 0px 10px;
+    padding: 20px;
+    text-align: center;
+}
+.thanks img{
+    width: 350px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px){
+
+    /* smaller font for smaller screens */
+    header h1{
+        font-size: 40px;
+    }
+
+    /* nav will be column instead of row
+    it will also not stick, but stay in the top */
+    nav{
+        flex-direction: column;
+        position: initial;
+    }
+
+    /* the main frame will have no margin, take up whole width */
+    .main{
+        margin: 0%;
+    }
+
+    /* contents of row will be column instead of row */
+    .row{
+        flex-flow: column;
+    }
+
+    /* the cards will only have margin above and below
+    not on sides */
+    .card{
+        margin: 10px 0px;
+    }
+    .card img{
+        width: 50%;
+    }
+
+    /* topcard will have no margin, it messed upp spaces between */
+    .topcard{
+        margin: 0px;
+    }
+}

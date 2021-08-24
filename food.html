@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Food for Cats</title>
+</head>
+<body>
+    <header>
+        <h1>Things for cats</h1>
+    </header>
+    <nav>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="food.html" class="active"><i class="fa fa-paw"></i> Food</a>
+        <a href="toys.html"><i class="fa fa-magic"></i> Toys</a>
+        <a href="beds.html"><i class="fa fa-bed"></i> Beds</a>
+        <a href="shopcart.html"><i class="fa fa-shopping-cart"></i> <span>0</span> - Shopping Cart</a>
+        <a href="myaccount.html"><i class="fa fa-user"></i> My Account</a>
+    </nav>
+    <div class="main">
+        <div class="card topcard">
+            <h2>Don't miss out on these deals:</h2>
+            <div class="imgrow">
+                <div class="imgcard">
+                    <img src="img/food01.jpg" alt="three portion bags of cat food"><br>
+                    Three Meals Pack<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Three Meals Pack', 9)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/food01.jpg" alt="three portion bags of cat food"><br>
+                    Three Meals Pack<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Three Meals Pack', 9)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/food01.jpg" alt="three portion bags of cat food"><br>
+                    Three Meals Pack<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Three Meals Pack', 9)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/food01.jpg" alt="three portion bags of cat food"><br>
+                    Three Meals Pack<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Three Meals Pack', 9)">Add to cart</button>
+                </div>
+                <div class="imgcard">
+                    <img src="img/food01.jpg" alt="three portion bags of cat food"><br>
+                    Three Meals Pack<br>
+                    <b><span class="oldprice">$13</span><br>
+                    <span class="dealprice">now $9</span></b><br>
+                    <button class="button" onclick="addToCart('Three Meals Pack', 9)">Add to cart</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card smallcard">
+                    <h2>Tin Can Food</h2>
+                    <img src="img/food02.png" alt="cat food">
+                    <p>Tasty cat food in a can.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper.<br>Nulla varius odio sit amet risus ultricies vulputate...</p>
+                    <h4>$5</h4>
+                    <button class="button" onclick="addToCart('Tin Cat Food', 5)">Add to cart</button>
+                </div>
+                <div class="card smallcard">
+                    <h2>Purr & Miaow Food Pack</h2>
+                    <img src="img/food03.png" alt="cat food">
+                    <p>A pack of four meals for your cat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper.<br>Nulla varius odio sit amet risus ultricies vulputate...</p>
+                    <h4>$19</h4>
+                    <button class="button" onclick="addToCart('Purr & Miaow Food Pack', 19)">Add to cart</button>
+                </div>
+            </div>
+            <!-- items for the right column -->
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Kibble Delight</h2>
+                    <img src="img/food04.jpg" alt="cat food bag in the shape of a cat head">
+                    <p>Carefully designed food for your cat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper...</p>
+                    <h4>$29</h4>
+                    <button class="button" onclick="addToCart('Kibble Delight', 29)">Add to cart</button>
+                </div>
+                <div class="card">
+                    <h2>Kittos Purrfect Strips</h2>
+                    <img src="img/food05.png" alt="jerky strips for cats">
+                    <p>Yummy jerky strips.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tempor semper...</p>
+                    <h4>$7</h4>
+                    <button class="button" onclick="addToCart('Kittos Purrfect Strips', 7)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="linkrow">
+            <div class="linkcolumn">
+                <a href="contact.html">About Us</a>
+                <a href="#">Find a shop near you</a>
+                <a href="#">Our affiliates</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">F A Q</a>
+                <a href="#">Customer Services</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">Become a partner</a>
+                <a href="#">Job openings</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="socialmenu">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="contact.html"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fa fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2021 Things for Cats</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

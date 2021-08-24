@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <h1>Things for cats</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="food.html"><i class="fa fa-paw"></i> Food</a>
+        <a href="toys.html"><i class="fa fa-magic"></i> Toys</a>
+        <a href="beds.html"><i class="fa fa-bed"></i> Beds</a>
+        <a href="shopcart.html" class="active"><i class="fa fa-shopping-cart"></i> <span>0</span> - Shopping Cart</a>
+        <a href="myaccount.html"><i class="fa fa-user"></i> My Account</a>
+    </nav>
+    
+    <div class="main">
+            <div class="card topcard">
+                <p style="color:slateblue">Free delivery with purchase over $500</p>
+                <h1>Your Shopping Cart</h1>
+            </div>
+        <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <div id="itemsnumber"></div>
+                <div id="shopcart"></div>
+                <!-- <table class="shopcart">
+                    <tr>
+                        <th>Item</th>
+                        <th>Product ID</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Fluffy Cat Bed</td>
+                        <td>927325</td>
+                        <td>1</td>
+                        <td>$399</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Kibble Dry Food</td>
+                        <td>19283</td>
+                        <td>3</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>Claws Out Scratching Post</td>
+                        <td>217634</td>
+                        <td>1</td>
+                        <td>$179</td>
+                    </tr>
+                    this is here to make an empty row -->
+                    <!-- there is probably a better solution to this -->
+                    <!-- <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    row for sum -->
+                    <!-- <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Order Total:</th>
+                        <th>$875</th>
+                    </tr>
+                </table><br>
+                <table class="shopcart">
+                    <tr>
+                        
+                    </tr>
+                </table> -->
+                <div id="totalprice"></div>
+                <button onclick="clearShopCart()" class="button">Empty shopping cart</button>
+                <a href="checkout.html" class="button">Go to checkout</a>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2 class="dealtext">Top seller!</h2>
+                <h4>Catnip Fish</h4>
+                <img src="img/toy02.jpg" alt="a cat with a toy fish">
+                <p>A toy fish with catnip inside.</p>
+                <p>This is really special, you should buy it.</p>
+                <h4>$7</h4>
+                <button class="button" onclick="addToCart('Catnip Fish', 7)">Add to cart</button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="linkrow">
+            <div class="linkcolumn">
+                <a href="contact.html">About Us</a>
+                <a href="#">Find a shop near you</a>
+                <a href="#">Our affiliates</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">F A Q</a>
+                <a href="#">Customer Services</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div class="linkcolumn">
+                <a href="#">Become a partner</a>
+                <a href="#">Job openings</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="socialmenu">
+            <a href="index.html"><i class="fa fa-home"></i></a>
+            <a href="contact.html"><i class="fa fa-phone"></i></a>
+            <a href="#"><i class="fa fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2021 Things for Cats</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script src="shopcart.js"></script>
+</body>
+</html>
